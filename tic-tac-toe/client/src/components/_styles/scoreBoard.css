@@ -1,0 +1,19 @@
+@import "../../utils/base";
+
+.score-board {
+    display: grid;
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(3,calc(80vw/3));
+    gap: calc((90vw - 80vw)/(3 - 1));
+    margin: 2rem auto 0 auto;
+}
+
+.score-board-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+}

@@ -1,0 +1,25 @@
+@import "../../utils/base.css";
+
+.turn-indicater {
+    color: var(--silver);
+    background-color: var(--semi-dark-navy);
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 0.5rem;
+    padding: 0.6rem 0;
+    box-shadow: 0 7px 0 var(--dark-navy-border);
+    margin: auto 0;
+    box-sizing: content-box;
+    justify-content: space-evenly;
+}
+
+.turn-indicater > span {
+    margin: auto 0;
+    font-size: 1.2rem;
+    color: var(--silver);
+}
+
+.turn-indicater > img {
+    height: 1.4rem;
+    margin: auto 0;
+}

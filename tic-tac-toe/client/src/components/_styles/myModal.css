@@ -1,0 +1,22 @@
+@import "../../utils/base.css";
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.modal-buttons button {
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.winner-display {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.winner-display img {
+    max-width: 48px;
+}

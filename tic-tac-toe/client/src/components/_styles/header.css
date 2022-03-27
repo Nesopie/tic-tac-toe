@@ -1,0 +1,12 @@
+@import "../../utils/base.css";
+
+header {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(3, calc(80vw/3));
+    grid-template-rows: repeat(1, 100%);
+    margin: 0 auto 2rem auto;
+    height: 5vh;
+    gap: calc((90vw - 80vw) / (3 - 1));
+    min-height: 48px;
+}

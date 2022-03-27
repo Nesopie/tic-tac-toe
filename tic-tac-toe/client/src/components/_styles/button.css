@@ -1,0 +1,52 @@
+@import "../../utils/base.css";
+
+button {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.silver  {
+    background-color: var(--silver);
+}
+
+button.silver {
+    border-bottom: 5px solid var(--dark-silver);
+}
+
+.silver button:hover {
+    background-color: var(--silver-hover);
+}
+
+.refresh-button {
+    display: flex;
+    min-height: 5vh;
+    padding: 8px;
+    justify-self: end;
+}
+
+.yellow {
+    background-color: var(--light-yellow);
+}
+
+button.yellow {
+    border-bottom: 5px solid var(--dark-yellow);
+}
+
+.yellow button:hover {
+    background-color: var(--light-yellow-hover);
+    border-bottom: 5px solid var(--light-yellow);
+}
+
+.blue {
+    background-color: var(--light-blue);
+}
+
+button.blue {
+    border-bottom: 5px solid var(--dark-blue);
+}
+
+.blue button:hover {
+    background-color: var(--light-blue-hover);
+    border-bottom: 5px solid var(--light-blue);
+}
