@@ -6,7 +6,7 @@ button {
     border: none;
 }
 
-.silver  {
+.silver {
     background-color: var(--silver);
 }
 
@@ -22,7 +22,6 @@ button.silver {
     display: flex;
     min-height: 5vh;
     padding: 8px;
-    justify-self: end;
 }
 
 .yellow {

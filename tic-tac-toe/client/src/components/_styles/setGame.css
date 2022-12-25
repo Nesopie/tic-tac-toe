@@ -31,3 +31,15 @@
 .new-game-container > button {
     width: 100%;
 }
+
+@media only screen and (min-width: 480px) {
+    .set-game-container {
+        width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .set-game-container {
+        width: 500px;
+    }
+}

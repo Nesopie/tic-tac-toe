@@ -1,4 +1,4 @@
-import './_styles/button.css'
+import "./_styles/button.css";
 
 interface IButtonProps {
     color: string;
@@ -8,10 +8,13 @@ interface IButtonProps {
 }
 
 const Button = (props: IButtonProps): JSX.Element => {
-    return(
-        <button onClick={props.handleClick} className={props.color}>
+    return (
+        <button
+            onClick={props.handleClick}
+            className={props.color}
+        >
             {props.buttonText ? props.buttonText : props.children}
         </button>
-    )
-}
-export default Button
+    );
+};
+export default Button;

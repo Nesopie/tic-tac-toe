@@ -1,12 +1,14 @@
 @import "../../utils/base.css";
 
 header {
-    display: grid;
-    width: 90vw;
-    grid-template-columns: repeat(3, calc(80vw/3));
-    grid-template-rows: repeat(1, 100%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     margin: 0 auto 2rem auto;
+    /* padding: 0 2rem; */
     height: 5vh;
-    gap: calc((90vw - 80vw) / (3 - 1));
-    min-height: 48px;
+}
+
+header > * {
+    flex-basis: auto;
 }

@@ -1,0 +1,77 @@
+@import "../../utils/base.css";
+
+.rooms-table {
+    width: 100%;
+}
+
+th {
+    font-size: 1.2rem;
+    color: var(--light-blue);
+}
+
+td {
+    text-align: center;
+    color: var(--dark-yellow);
+}
+
+td:first-child {
+    color: var(--light-yellow);
+}
+
+th,
+td {
+    padding: 0.5rem 0;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+tbody tr:hover {
+    background-color: var(--dark-navy);
+}
+
+.create-room {
+    display: flex;
+    margin-top: 1rem;
+    gap: 5px;
+}
+
+.create-room input {
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 100;
+    border: none;
+    background-color: var(--dark-navy-border);
+    color: white;
+    padding-left: 8px;
+}
+
+.create-room button {
+    white-space: nowrap;
+}
+
+@media only screen and (min-width: 480px) {
+    .rooms-table,
+    .create-room {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .create-room {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .rooms-table,
+    .create-room {
+        max-width: 700px;
+    }
+}

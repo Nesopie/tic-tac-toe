@@ -1,7 +1,6 @@
-import { Modal, Box, Typography } from "@mui/material";
-import Button                     from "./button";
+import { Modal, Box } from "@mui/material";
+import Button from "./button";
 import "./_styles/myModal.css";
-
 
 export interface IModalProps {
     children: React.ReactNode;
@@ -10,22 +9,22 @@ export interface IModalProps {
     button2Text: string;
     button2Action: React.MouseEventHandler<HTMLButtonElement>;
     openModal: boolean;
-    setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
+    setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const boxStyle = {
-    position: 'absolute' as 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: '100%',
-    bgcolor: 'var(--semi-dark-navy)',
-    display: 'flex',  
-    flexDirection: 'column',
-    alignItems: 'center',
-    padding: '3rem 5vw',
-    gap: '1rem'
-}
+    position: "absolute" as "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "100%",
+    bgcolor: "var(--semi-dark-navy)",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "3rem 5vw",
+    gap: "1rem",
+};
 
 const MyModal = (props: IModalProps): JSX.Element => {
     return (
@@ -34,24 +33,24 @@ const MyModal = (props: IModalProps): JSX.Element => {
             onClose={() => props?.setOpenModal(false)}
         >
             <Box sx={boxStyle}>
-                { props.children }
+                {props.children}
                 <div className="modal-buttons">
                     <Button
-                        handleClick={ props.button1Action }
+                        handleClick={props.button1Action}
                         color="silver"
                     >
-                        { props.button1Text }
+                        {props.button1Text}
                     </Button>
                     <Button
-                        handleClick={ props.button2Action }
+                        handleClick={props.button2Action}
                         color="yellow"
                     >
-                        { props.button2Text }
+                        {props.button2Text}
                     </Button>
                 </div>
             </Box>
         </Modal>
     );
-}
+};
 
 export default MyModal;

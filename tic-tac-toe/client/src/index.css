@@ -1,5 +1,5 @@
 @import "./utils/base.css";
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap");
 
 * {
     margin: 0;
@@ -12,6 +12,13 @@ body {
     font-family: outfit;
 }
 
-img { 
+img {
     height: 100%;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
